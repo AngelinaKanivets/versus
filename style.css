@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* стилі для хедера */
+.header {
+    top: 43px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.menu a {
+    color: #999;
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.menu a:hover {
+    color: #00D6B4;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+/* стилі для рекламної інформації */
+.banner {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 226px;
+    padding-bottom: 140px;
+    text-align: center;
+
+}
+
+.banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+    max-width: 465px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+}
+
+.banner a {
+    color: #00D6B4;
+    text-align: center;
+    font-size: 13px;
+    line-height: 19px;
+    /* 146.154% */
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #00D6B4;
+    padding: 10px 26px 10px 26px;
+    display: inline-block;
+}
+
+/* стилі для кода work */
+.works {
+    background: #222;
+    padding-top: 50px;
+    padding-bottom: 59px;
+}
+
+.works h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 120% */
+    margin-bottom: 33px;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pictures img {
+    width: calc(100% / 3 - 40px / 3);
+}
+
+/* стилі для кода footer */
+.footer {
+    background: #222;
+    padding-top: 35px;
+    padding-bottom: 37px;
+}
+
+.footer-logo {
+    color: #C2C2C2;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 122.222% */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-webflow {
+    color: #999;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 150% */
+}
+
+/* media запети  */
+@media(max-width: 650px) {
+    .pictures img {
+            width: calc(100% / 2 - 20px / 2);
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 460px) {
+     .pictures img {
+            width: 100%;
+    }
+
+    .menu a {
+        font-size: 9px;
+    }
+
+    .menu li {
+        margin-right: 10px;
+    }
+}
